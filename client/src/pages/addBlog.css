@@ -1,11 +1,11 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #8d7171;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9d5ec; /* light lilac background */
     height: 100%;
-    
 }
+
 .blog-container {
     display: flex;
     flex-direction: column;
@@ -23,55 +23,60 @@ html, body {
 
 .add-blog-title {
     text-align: start;
-
-    color: rgb(245, 232, 232);
+    color: #5b2a75; /* deep lilac text */
 }
+
 .add-blog-form {
-    background-color: #eadbdb;
-    border-radius: 10px;
+    background-color: #f5e8fa; /* soft lilac form background */
+    border-radius: 12px;
     padding: 2rem;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
     margin: 0 auto;
 }
+
 .title,
 .content {
     padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #333;
-  resize: none;
+    border: 1px solid #c5aacd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #4e245d;
+    resize: none;
+    transition: all 0.2s ease-in-out;
 }
+
 .title:focus,
 .content:focus {
     outline: none;
-    border-color: #a8aca8;
-    box-shadow: 0 0 0 2px rgba(26, 30, 26, 0.2);
-}
-.submit {
-    padding: 0.75rem;
-  background-color: #4d3f3f;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.submit:hover {
-    background-color: #755d5d;
+    border-color: #b37bbd;
+    box-shadow: 0 0 0 3px rgba(179, 123, 189, 0.25);
 }
 
+.submit {
+    padding: 0.75rem;
+    background-color: #7c4d9c; /* lilac-themed button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #693c85;
+}
 
 .nav-container {
     width: 100%;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -79,33 +84,40 @@ html, body {
     width: 100%;
     z-index: 1000;
     padding: 1rem;
-    background-color: #5f4c4c;
+    background-color: #8650a8; /* lilac navbar */
     color: white;
     display: flex;
     justify-content: end;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
 #logo {
     position: absolute;
     left: 20px;
     top: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
+
 .nav-links {
     position: relative;
     right: 30px;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
     list-style: none;
 }
+
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
+
 .nav-links a:hover {
-    color: #463636;
+    color: #dbc3ec;
 }
+
 .form-wrapper {
     width: 100%;
     max-width: 500px;
