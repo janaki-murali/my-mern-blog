@@ -1,15 +1,16 @@
-import React from 'react';
-import './addBlog.css';
+import React from 'react'
+import './AddBlog.css';
+
 
 const AddBlog = () => {
-    const [title, setTitle] = React.useState('');
-    const [content, setContent] = React.useState('');
-    const [author, setAuthor] = React.useState('');
+    const [title, setTitle] = React.useState('')
+    const [content, setContent] = React.useState('')
+    const [author, setAuthor] = React.useState('')
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const response = await fetch('http://localhost:5000/blogs', {
+        try{
+            const response = await fetch('http://localhost:5000/blogs',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -20,7 +21,7 @@ const AddBlog = () => {
                     author: author
                 })
             });
-            if (response.ok) {
+            if(response.ok){
                 alert('Blog added');
                 setTitle('');
                 setContent('');
@@ -31,40 +32,18 @@ const AddBlog = () => {
         }
     };
 
-    return (
-        <div className="main-wrapper">
+    return(
+        <div className="blog-container">
             <div className="form-wrapper">
-                <h2 className="page-title">Create New Blog</h2>
+                <h2 className="add-blog-title">Add blog</h2>
                 <form className="add-blog-form" onSubmit={handleSubmit}>
-                    <input
-                        className="input-field"
-                        type="text"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        placeholder="Blog title"
-                        required
-                    />
-                    <input
-                        className="input-field"
-                        type="text"
-                        value={content}
-                        onChange={(e) => setContent(e.target.value)}
-                        placeholder="Blog content"
-                        required
-                    />
-                    <input
-                        className="input-field"
-                        type="text"
-                        value={author}
-                        onChange={(e) => setAuthor(e.target.value)}
-                        placeholder="Author"
-                        required
-                    />
-                    <button className="submit-btn" type="submit">Post Blog</button>
+                    <input className="title" type="text" name="" value={title} onChange={(e) => setTitle(e.target.value)} id="title" placeholder="Enter title" required/>
+                    <input className='content' type="text" name="" value={content} onChange={(e) => setContent(e.target.value)} id="content" placeholder="Add content" required/>
+                    <input className='title' type="text" name="" value={author} onChange={(e) => setAuthor(e.target.value)} id="author" placeholder="Author name" required/>
+                    <button className="submit" type="submit">Add Blog</button>
                 </form>
             </div>
         </div>
-    );
-};
-
-export default addBlog;
+    )
+}
+export default AddBlog;

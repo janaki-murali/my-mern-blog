@@ -1,12 +1,12 @@
-import React from "react";
-import { Outlet, Link } from 'react-router-dom';
-import './pages/addBlog.css';
+import React from "react"
+import {Outlet, Link} from 'react-router-dom'
+import './pages/AddBlog.css';
 
 const App = () => {
-  return (
+  return(
     <div className="nav-container">
       <nav className="navbar">
-        <h2 className="brand-logo" id="logo">My Blog</h2>
+        <h2 id="logo">My Blog</h2>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/addblog">Add Blog</Link></li>
@@ -14,7 +14,6 @@ const App = () => {
       </nav>
       <Outlet />
     </div>
-  );
+  )
 }
-
-export default App;
+export default App

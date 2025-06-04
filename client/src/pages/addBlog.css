@@ -1,123 +1,114 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #9c7c7c;
+    font-family: Arial, sans-serif;
+    background-color: #8d7171;
     height: 100%;
+    
 }
-
-.blog-wrapper {
+.blog-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     width: 100%;
-    padding: 2rem;
     position: absolute;
-    top: 0;
+    padding: 2rem;
     box-sizing: border-box;
-    margin-top: 10px;
-    transform: translateY(-35px);
+    top: 0;
+    margin-top: 8px;
+    transform: translateY(-40px);
 }
 
-.blog-heading {
-    align-self: flex-start;
-    color: #f3e4e4;
-}
+.add-blog-title {
+    text-align: start;
 
-.blog-form {
-    background-color: #f0dede;
-    border-radius: 12px;
+    color: rgb(245, 232, 232);
+}
+.add-blog-form {
+    background-color: #eadbdb;
+    border-radius: 10px;
     padding: 2rem;
     width: 100%;
-    max-width: 480px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    max-width: 500px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    margin: auto;
+    gap: 1rem;
+    margin: 0 auto;
 }
-
-.input-title,
-.input-content {
+.title,
+.content {
     padding: 0.75rem 1rem;
-    border: 1px solid #bbb;
-    border-radius: 10px;
-    font-size: 1rem;
-    background-color: #ffffff;
-    color: #333;
-    resize: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  resize: none;
 }
-
-.input-title:focus,
-.input-content:focus {
+.title:focus,
+.content:focus {
     outline: none;
-    border-color: #9fa49f;
-    box-shadow: 0 0 0 2px rgba(30, 34, 30, 0.15);
+    border-color: #a8aca8;
+    box-shadow: 0 0 0 2px rgba(26, 30, 26, 0.2);
 }
-
-.btn-submit {
+.submit {
     padding: 0.75rem;
-    background-color: #5a4747;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #4d3f3f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit:hover {
+    background-color: #755d5d;
 }
 
-.btn-submit:hover {
-    background-color: #7a6060;
-}
 
-.navigation-wrapper {
+.nav-container {
     width: 100%;
 }
-
-.top-navbar {
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     padding: 1rem;
-    background-color: #6d5454;
-    color: #fff;
+    background-color: #5f4c4c;
+    color: white;
     display: flex;
-    justify-content: flex-end;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.brand-logo {
+#logo {
     position: absolute;
     left: 20px;
     top: 10px;
 }
-
-.menu-links {
-    display: flex;
-    list-style: none;
-    gap: 4rem;
+.nav-links {
     position: relative;
     right: 30px;
+    display: flex;
+    gap: 5rem;
+    list-style: none;
 }
-
-.menu-links a {
+.nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
-
-.menu-links a:hover {
-    color: #3d2f2f;
+.nav-links a:hover {
+    color: #463636;
 }
-
-.form-container {
+.form-wrapper {
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,57 +1,51 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #9e7d7d;
+    font-family: Arial, sans-serif;
+    background-color: #8d7171;
+    
 }
-
-.main-wrapper {
+.home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: 60px;
-    width: 100%;
+    top: 50px;
     height: 100%;
+    width: 100%;
     padding: 2rem;
     box-sizing: border-box;
 }
-
-.page-title {
-    text-align: left;
-    margin: 1.5rem 1rem;
-    color: #f7eaea;
+#heading {
+    text-align: start;
+    margin: 1.5rem;
+    color: rgb(245, 232, 232);
 }
-
-.card-grid {
+.blog-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
     padding: 2rem;
+    max-width: 1200px;
     width: 100%;
-    max-width: 1180px;
 }
-
-.card {
-    background-color: #f3e2e2;
-    padding: 1.25rem;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
-    width: 290px;
+.blog-card {
+    background-color: #eadbdb;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: left;
-    transition: transform 0.25s ease-in-out;
+    transition: transform 0.3s ease;
 }
-
-.card:hover {
-    transform: scale(1.03);
+.blog-card:hover {
+    transform: scale(1.02);
 }
-
-.card h3 {
-    margin-bottom: 16px;
-    color: #2f2f2f;
+.blog-card h3 {
+    margin-bottom: 20px;
+    color:#333;
 }
-
-.card p {
-    color: #555555;
+.blog-card p {
+    color: #555;
 }

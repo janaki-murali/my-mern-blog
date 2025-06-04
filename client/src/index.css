@@ -1,12 +1,11 @@
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.85);
-  background-color: #252525;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,55 +15,54 @@
 
 a {
   font-weight: 500;
-  color: #6570ff;
+  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #4e54d4;
+  color: #535bf2;
 }
 
 body {
   margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2em;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 7px;
+  border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.65em 1.3em;
-  font-size: 1rem;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1b1b1b;
+  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #6570ff;
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
-  outline: 3px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #223447;
-    background-color: #fefefe;
+    color: #213547;
+    background-color: #ffffff;
   }
   a:hover {
-    color: #7b81ff;
+    color: #747bff;
   }
   button {
-    background-color: #fafafa;
+    background-color: #f9f9f9;
   }
 }
